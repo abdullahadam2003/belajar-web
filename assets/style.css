@@ -1,26 +1,27 @@
-*{
-	margin: 0;
-	padding: 0;
+* {
+	margin:0;
+	padding:0;
 	box-sizing: border-box;
 	font-family: Arial, sans-serif;
 }
 
-body{
+body {
 	background-color: lightgrey;
 }
 
-header{
+header {
 	background-color: crimson;
 	color: white;
 	padding: 20px;
 }
 
 header h2 {
-	font-size:36px;
-	margin-bottom: 5 px;
+	font-size: 36px;
+	margin-bottom: 5px;
 }
+
 .div-utama {
-	max-width: 1080px;
+	max-width:1080px;
 	margin: 20px auto;
 	background-color: white;
 	padding: 15px;
@@ -32,7 +33,7 @@ header h2 {
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
-	background-color: orange;
+	background-color: darkorange;
 	font-size: 20px;
 	font-weight: bold;
 }
@@ -49,35 +50,150 @@ header h2 {
 	display: block;
 }
 
-.navigasi li a:hover {
-	background-color:red;
+.navigasi li a:hover{
+	background-color: crimson;
 	transition-duration: 2s;
 }
 
 .banner {
 	margin-bottom: 15px;
 }
-
 .banner img {
-	display: block;
 	width: 100%;
-	height: 350px;
 }
+
+.menu-kiri {
+	width: 250px;
+	float: left;
+	margin-right: 10px;
+}
+
+.menu-tengah {
+	width: 530px;
+	float: left;
+	margin-right: 10px;
+}
+
+.menu-tengah img {
+	width: 100%;
+}
+
+.menu-kanan {
+	width: 250px;
+	float:left;
+}
+
+.menu-kanan-bawah {
+	float:left;
+	width: 250px;
+}
+
+.menu-kanan-bawah img {
+	width: 100%;
+}
+
+.berita ul {
+	list-style-type: none;
+}
+
+.berita ul li a {
+	text-decoration: none;
+	display: block;
+	padding: 10px;
+	color: black;
+	border-bottom: 1px solid grey;
+}
+
+.berita ul li a:hover {
+	color: white;
+	background-color: blue;
+}
+
+.kotak {
+	border: 1px solid crimson;
+	padding: 10px;
+	margin-bottom:15px;
+}
+
+.kotak h3 {
+	background-color: crimson;
+	color: white;
+	text-align: center;
+	padding: 10px;
+	margin-bottom: 12px;
+	border-radius: 15px;
+}
+
+.kotak .kapan {
+	text-align:right;
+	font-size: 12px;
+}
+.tombol {
+	text-decoration: none;
+	padding: 10px;
+	width: 120px;
+	background-color: darkorange;
+	text-align: center;
+	display: block;
+	margin-top: 10px;
+	color: white;
+	border-radius: 15px;
+}
+
+.menu-tengah .tombol {
+	background-color: green;
+}
+
+.tombol:hover {
+	background-color: black;
+	transition-duration: 1s;
+	
+}
+
+.kotak p {
+	text-align: center;
+	font-size: 12px;
+}
+
+.menu-kanan-bawah h4 {
+	text-decoration-style: bold;
+	text-align:center;
+}
+
 
 footer {
 	clear: both;
 	background-color: crimson;
 	color: white;
-	padding: 15px;
-	text-align: center;
+	padding: 10px;
+	text-align:center;
 }
 
-@media screen and (max-width:780px) {
-	header h2, header p {
+@media screen and (max-width:1095px) {
+	.div-utama {
+		width: 100%;
+	}
+	.menu-kiri {
+		width: 45%;
+	}
+	.menu-tengah{
+		width: 50%;
+		float: right;
+	}
+	.menu-kanan, .menu-kanan-bawah {
+		width: 45%;
+	}
+}
+
+@media screen and (max-width:780px){
+	header h2, header p{
 		text-align: center;
 	}
-	
-	.navigasi li {
+	.navigasi li{
 		float: none;
 	}
+	.menu-kiri, .menu-kanan, .menu-kanan-bawah, .menu-tengah {
+		float: none;
+		width: 100%;
+	}	
 }
